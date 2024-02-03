@@ -94,6 +94,7 @@ searchBtn.addEventListener("click", function(e){
   
       divText.appendChild(nomeElement)
       divText.appendChild(idElement)
+      divText.className = "textDiv"
   
       divPokemon.appendChild(imgElement);
       divPokemon.appendChild(divText)

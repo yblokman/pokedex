@@ -16,7 +16,7 @@ body{
 .pokemonContainer{
     display: flex;
     flex-direction: row;
-    justify-content:flex-start;
+    justify-content: space-evenly;
     align-items:center;
     /* padding: 30px; */
     background-color: #0000001A;
@@ -41,7 +41,6 @@ img{
 .typePokemon{
     width: 100px;
     height: 100px;
-    padding-left: 50px;
     border: aliceblue;
 }
 
@@ -89,3 +88,56 @@ img{
     transform: scale(1.02);
 }
 
+/* ======================= */
+
+@media screen and (max-width: 390px) {
+    .input{
+        width: 270px;
+        height: 35px;
+        border-radius: 10px;
+        border: 2px solid #0000001A;
+        box-shadow: 1px 1px 5px #828282;
+        font-family: "Press Start 2P", system-ui;
+        font-size: 16px;
+        padding-left: 10px;
+        outline: unset;
+    }
+
+    .pokemonContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items:center;
+        /* padding: 30px; */
+        background-color: #0000001A;
+        width: 200px; 
+        height: 450px;
+        border-radius: 20px;
+        background: rgba(0, 0, 0, 0.10);
+        gap: 10px;
+        box-shadow: 2px 2px 10px #828282;
+    }
+
+    .typePokemon{
+        width: 130px;
+        height: 130px;
+        border: aliceblue;
+    }
+
+    img{
+        width: 200px;
+        height: 200px;
+    }
+
+    p{
+        font-family: "Press Start 2P", system-ui;
+        font-size: 16px;
+    }
+
+    .textDiv{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
