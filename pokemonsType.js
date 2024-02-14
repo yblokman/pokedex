@@ -70,10 +70,14 @@ searchBtn.addEventListener("click", function(e){
 
   const inputPokemon = document.querySelector('#input')
 
-  const searchPokemon = inputPokemon.value
+  const searchPokemon = inputPokemon.value.trim()
+  
+  let pokemonInput = searchPokemon
+
+  pokemonInput = pokemonInput.charAt(0).toUpperCase() + pokemonInput.slice(1).toLowerCase()
 
   pokemons.forEach(pokemon => {
-    if (pokemon.nome === searchPokemon) {
+    if (pokemon.nome === pokemonInput) {
       const caminhoDaImagem = `assets/POKEMON/${pokemon.nome} - ${pokemon.id}.svg`;
       const caminhoDoTipo = `assets/TYPE/${pokemon.tipo1}.svg`;
                 
